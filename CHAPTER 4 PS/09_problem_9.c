@@ -5,14 +5,15 @@ int main()
     int num, isPrime = 0;
     printf("Enter a number: ");
     scanf("%d", &num);
+    int i = 2;
 
-    for (int i = 2; i < num; i++)
+    while (i < num)
     {
-        if (num % i == 0 && num != 2)
+        if (num % i == 0)
         {
-            isPrime = 1; // True
-            break;
+            isPrime = 1;
         }
+        i++;
     }
 
     if (isPrime) // Is true if isPrime == any non-zero integer.
