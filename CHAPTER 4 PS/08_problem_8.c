@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h> // Needed for sqrt() function.
 
 int main()
 {
