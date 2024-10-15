@@ -2,9 +2,10 @@
 
 int main()
 {
-    char greeting[] = "Hello";  // A string, stored as an array of characters
+    for (int i = 0; i <= 5; i++)
+    {
+        printf("%d\n", i);
+    }
 
-    printf("%s", greeting);
-    printf("%c", greeting[4]); // o
     return 0;
 }
