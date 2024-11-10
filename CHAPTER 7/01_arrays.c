@@ -1,13 +1,21 @@
 #include <stdio.h>
-    
-int main()
+
+void main()
 {
-    int marks[90]; // Reserve space to store 90 integers.
+    // Write a C program to find the minimum and maximum element in an array.
 
-    marks[0] = 45;
-    marks[1] = 95;
-    // We can go all the way till marks[89] in this case.
-    printf("Marks 0 and Marks 1 are %d & %d", marks[0], marks[1]);
+    int arr[3] = {1, 2, 3}, min = arr[0], max = arr[0];
 
-    return 0;
+    for (int i = 0; i < 3; i++)
+    {
+        if (arr[i] > max)
+        {
+            max = arr[i];
+        }
+        else if (arr[i] < min)
+        {
+            min = arr[i];
+        }
+    }
+    printf("Minimum element = %d\nMaximum Element = %d", min, max);
 }
